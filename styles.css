@@ -1,0 +1,70 @@
+.recipe-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 10px 0;
+    background-color: #fff;
+    transition: transform 0.2s;
+}
+
+.recipe-card:hover {
+    transform: scale(1.02);
+}
+
+.dietary-badge {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+.nutrition-summary {
+    font-size: 16px;
+    color: #555;
+    margin: 10px 0;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+}
+
+.cooking-steps {
+    list-style-type: decimal;
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+    .recipe-card {
+        margin: 5px;
+        padding: 12px;
+    }
+    .nutrition-summary {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .recipe-card {
+        font-size: 14px;
+    }
+}
