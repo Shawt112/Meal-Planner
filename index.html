@@ -1,12 +1,1 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meal Planner</title>
-</head>
-<body>
-    <h1>Welcome to the Meal Planner!</h1>
-    <p>Your meal planning starts here.</p>
-</body>
-</html>
+<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <title>Meal Planner</title>\n    <link rel="stylesheet" href="styles.css">\n</head>\n<body>\n    <header>\n        <h1>Meal Planner</h1>\n        <div id="search-section">\n            <input type="text" id="recipe-search" placeholder="Search for recipes..."><br>\n            <button id="search-btn">Search</button>\n        </div>\n    </header>\n    <main>\n        <div id="dietary-filters">\n            <label for="diet-type">Diet Type:</label>\n            <select id="diet-type">\n                <option value="all">All</option>\n                <option value="vegan">Vegan</option>\n                <option value="vegetarian">Vegetarian</option>\n                <option value="gluten-free">Gluten Free</option>\n            </select>\n        </div>\n        <div id="calorie-range">\n            <label for="calories">Calorie Range:</label>\n            <input type="number" id="calories-min" placeholder="Min"> - \n            <input type="number" id="calories-max" placeholder="Max">\n        </div>\n        <div id="time-filter">\n            <label for="time">Prep Time:</label>\n            <input type="number" id="time-min" placeholder="Min (mins)"> - \n            <input type="number" id="time-max" placeholder="Max (mins)">\n        </div>\n        <div id="recipe-grid">\n            <!-- Recipes will be displayed here -->\n        </div>\n    </main>\n    <script src="recipe-database.js"></script>\n    <script src="app.js"></script>\n</body>\n</html>
